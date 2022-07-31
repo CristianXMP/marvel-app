@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="d-flex  justify-content-center align-items-center flex-column  p-3">
+    <div class="col-12 mb-1">
+      <h4 class="text-center">MARVEL CHARACTERS</h4>
+    </div>
+    <div class="col-12 col-md-10 col-sm-10">
+      <div class="input-group mb-2" font fw-normal fz-3>
+        <div class="input-group-prepend">
+          <div class="input-group-text"> <i class="fa fa-search"></i></div>
+        </div>
+        <input type="text" class="form-control" [formControl]="search" id="inlineFormInputGroup"
+          placeholder="buscar heroe">
+      </div>
+    </div>
+    <div *ngIf="results.length > 0 && search.value" class="col-11 col-md-8 col-sm-8 content-filter ">
+      <mat-list>
+        <mat-list-item *ngFor="let item of results" class="option" (click)="navigateDetail(item.id)">
+          <img matListAvatar [src]="item.image" alt="https://cdn-icons-png.flaticon.com/512/149/149071.png">
+          <h3 matLine> {{item.title}} </h3>
+        </mat-list-item>
+      </mat-list>
+    </div>
+    <div *ngIf="(results.length == 0 && search.value && templateEmpty)" class="col-11 col-md-8 col-sm-8">
+      <h3 class="text-center text-danger">No se encontraron resultados.</h3>
+    </div>
+  </div>
+</div>

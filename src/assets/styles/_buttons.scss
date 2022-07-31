@@ -1,0 +1,29 @@
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  background: none;
+  border: 1 ;
+  border-color:#eb1b24 ;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+}
+.btn-m {
+  height: 2rem;
+  width: 9rem;
+  border-radius: 0px 17px;
+}
+
+.btn-m:hover {
+  background-color: #ffffff;
+  border-color:#eb1b24 ;
+  color: #eb1b24;
+}
+
+.btn-m-primary {
+  background-color: #eb1b24;
+  color: #ffffff;
+}

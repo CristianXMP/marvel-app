@@ -1,0 +1,34 @@
+.content-filter {
+position: absolute;
+top: 164px;
+z-index: 9;
+background: #fff;
+max-height: 300px;
+height: auto;
+padding: 1rem;
+border-radius: 15px;
+overflow-y: auto;
+.filter {
+  height: 2rem;
+  border-bottom: 1px solid #e4e4e4;
+}
+}
+
+.option {
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: #dcdcdc;
+}
+
+.content-filter {
+  animation-name: appear;
+            animation-duration: 1s;
+            opacity: 1;
+}
+
+@keyframes appear{
+  0% { opacity: 0 }
+  100% { opacity: 1 }
+}

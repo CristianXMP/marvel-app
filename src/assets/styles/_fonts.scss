@@ -1,0 +1,69 @@
+@font-face {
+  font-family: $ff;
+  src: url(/../assets/fonts/mollen/marvel-r.ttf);
+}
+
+* {
+  font-family: $ff;
+
+  &::placeholder {
+      font-family: $ff;
+  }
+}
+
+// Estilos de fuente
+[font] {
+  font-family: var(--font-family);
+}
+
+[f-title-3]{
+  font: {
+    family: $ff;
+    size: 3rem;
+  };
+
+  letter: {
+    spacing: -1px;
+  };
+}
+
+//font size
+
+[fz-3] {
+  font-size: 3rem;
+}
+[fz-1] {
+  font-size: 1rem;
+}
+[fz-2] {
+  font-size: 2rem;
+}
+
+h3 {
+  font: {
+    family: sans-serif;
+    size: 1rem;
+    weight: bold;
+  };
+
+}
+p {
+  font: {
+    family: sans-serif;
+    size: 0.9rem;
+    weight: bold;
+  };
+  margin: 0;
+}
+
+[fcW]{
+  color: $colorWhite;
+}
+
+[fcwm] {
+  color: $colorWm;
+}
+
+[fw-normal] {
+  font-weight: normal !important;
+}

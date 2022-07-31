@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+@import "assets/styles/variables";
+@import "assets/styles/fonts";
+@import "assets/styles/buttons";
+
+// clase global para calcular la altura del contenido
+.h-m {
+  height: calc(70vh - 9rem);
+}
+
+.pointer {
+  cursor: pointer;
+}
